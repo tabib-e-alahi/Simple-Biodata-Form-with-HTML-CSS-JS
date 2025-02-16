@@ -11,7 +11,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; 
+    margin: 30px 0;
+    background: #ffff;
 }
 
 .container{
@@ -20,6 +21,7 @@ body{
     width: 500px; 
     border-radius: 12px; 
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); 
+    height: fit-content;
 }
 
 form{
@@ -93,4 +95,20 @@ textarea {
 #closeModal { 
     margin-top: 10px; 
     background: red; 
+}
+
+button { 
+    width: 100%; 
+    padding: 12px; 
+    background: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 6px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: 0.3s; 
+} 
+ 
+button:hover { 
+    background: #0056b3; 
 } 

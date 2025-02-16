@@ -1,13 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Bio Data Form</title>
-</head>
-<body>
-    <h1>Bio Data Form</h1>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Bio Data Form</h2>
+      <form id="bioDataForm">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input
+            type="text"
+            id="fullName"
+            placeholder="Enter 
+full name"
+          />
+        </div>
+        <div class="form-group">
+          <label>Date of Birth</label>
+          <input type="date" id="dob" />
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <select id="gender">
+            <option value="">Select Gender</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="email" placeholder="example@mail.com" />
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="Enter phone 
+(11-15 digits)"
+          />
+        </div>
+        <div class="form-group">
+          <label>Nationality</label>
+          <input
+            type="text"
+            id="nationality"
+            placeholder="Enter 
+nationality"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Marital Status</label>
+          <select id="maritalStatus">
+            <option value="">Select Status</option>
+            <option>Single</option>
+            <option>Married</option>
+            <option>Divorced</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Profession</label>
+          <input
+            type="text"
+            id="profession"
+            placeholder="Enter 
+profession"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Address</label>
+          <textarea
+            id="address"
+            rows="3"
+            placeholder="Enter your 
+address"
+          ></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Modal for Displaying Submitted Data -->
+    <div class="modal" id="bioDataModal">
+      <div class="modal-content">
+        <h3>Submitted Bio Data</h3>
+        <p id="displayData"></p>
+        <button id="closeModal">Close</button>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
